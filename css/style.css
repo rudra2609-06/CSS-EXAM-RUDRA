@@ -57,6 +57,10 @@ header {
 	font-family: "Roboto", sans-serif;
 }
 
+.navbar a img{
+	z-index: 2;
+}
+
 .navbar>ul>li>a:hover {
 	color: #fec544;
 }
@@ -120,10 +124,10 @@ header {
 
 /* hero section starts */
 
-.hero-img .img-1 {
+.hero-img img{
 	display: block;
 	width: 100%;
-	object-fit: cover;
+	/* background-attachment:cover; */
 }
 
 /* hero section ends */
