@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1320px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 3rem;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.d-flex {
+	display: flex;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+
+/* header section starts  */
+
+header {
+	background: #030A13;
+}
+
+.navbar ul li a {
+	font-size: 0.8rem;
+	line-height: 25px;
+	font-family: "Roboto", sans-serif;
+}
+
+.navbar>ul>li>a:hover {
+	color: #fec544;
+}
+
+.navbar ul li:nth-child(4) {
+	position: relative;
+}
+
+.dropdown {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	/* border: 2px solid red; */
+	top: 140%;
+	left: 0%;
+	background-color: #fff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	transition: all 0.5s ease-in-out;
+}
+
+.dropdown ul li a:hover {
+	color: #564314;
+	font-weight: 600;
+}
+
+
+
+.navbar>ul>li:nth-child(4)::after {
+	content: '\F229';
+	position: absolute;
+	font-family: bootstrap-icons;
+	top: 25%;
+	padding-left: 5px;
+	left: 50%;
+	font-size: 0.8rem;
+	color: #fff;
+}
+
+
+.navbar>ul>li:nth-child(4):hover>.dropdown {
+	opacity: 1;
+	visibility: visible;
+	width: 130%;
+}
+
+
+
+
+.dropdown ul li a {
+	font-size: 1rem;
+	line-height: 25px;
+	font-family: "Manrope", sans-serif;
+	padding: 0.5rem 0;
+	color: rgb(27, 23, 23);
+	font-weight: 500;
+	margin-left: 5px;
+	/* background-color: #fff; */
+}
+
+/* header section ends  */
+
+/* hero section starts */
+
+.hero-img .img-1 {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* hero section ends */
